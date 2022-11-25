@@ -81,6 +81,7 @@ mod tests {
         assert_eq!(nums1, vec![1, 2, 2, 3, 5, 6]);
     }
 
+    #[test]
     fn test2() {
         let mut nums1 = vec![1];
         let mut nums2 = vec![];
@@ -91,6 +92,7 @@ mod tests {
         assert_eq!(nums1, vec![1]);
     }
 
+    #[test]
     fn test3() {
         let mut nums1 = vec![0];
         let mut nums2 = vec![1];
