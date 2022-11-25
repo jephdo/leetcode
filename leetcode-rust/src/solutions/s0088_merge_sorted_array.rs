@@ -71,15 +71,33 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test() {
+    fn test1() {
         let mut nums1 = vec![1, 2, 3, 0, 0, 0];
         let mut nums2 = vec![2, 5, 6];
         let n = nums2.len() as i32;
         let m = nums1.len() as i32 - n;
 
-        println!("{:?} {} {:?} {}", nums1, m, nums2, n);
         Solution::merge(&mut nums1, m, &mut nums2, n);
-
         assert_eq!(nums1, vec![1, 2, 2, 3, 5, 6]);
+    }
+
+    fn test2() {
+        let mut nums1 = vec![1];
+        let mut nums2 = vec![];
+        let n = nums2.len() as i32;
+        let m = nums1.len() as i32 - n;
+
+        Solution::merge(&mut nums1, m, &mut nums2, n);
+        assert_eq!(nums1, vec![1]);
+    }
+
+    fn test3() {
+        let mut nums1 = vec![0];
+        let mut nums2 = vec![1];
+        let n = nums2.len() as i32;
+        let m = nums1.len() as i32 - n;
+
+        Solution::merge(&mut nums1, m, &mut nums2, n);
+        assert_eq!(nums1, vec![1]);
     }
 }
