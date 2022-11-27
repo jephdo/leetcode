@@ -11,3 +11,4 @@ mod s0050_pow;
 mod s0066_plus_one;
 mod s0083_remove_duplicates;
 mod s0088_merge_sorted_array;
+mod s0121_best_time_to_buy_and_sell_stock;
