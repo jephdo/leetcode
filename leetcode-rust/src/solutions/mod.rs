@@ -13,5 +13,7 @@ mod s0083_remove_duplicates;
 mod s0088_merge_sorted_array;
 mod s0121_best_time_to_buy_and_sell_stock;
 mod s0125_valid_palindrome;
+mod s0232_implement_queue_using_stack;
 mod s0242_valid_anagram;
+mod s0704_binary_search;
 mod s0733_flood_fill;
